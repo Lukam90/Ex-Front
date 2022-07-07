@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Extract Component Logic</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" />
+
+        <script src="alpine.min.js"></script>
+
+        <script src="extract.js" type="module"></script>
+    </head>
+
+    <body class="p-10 max-w-lg mx-auto">
+        <div class="bg-gray-300 px-10 py-6 rounded" x-data="taskApp()">
+            <form @submit.prevent="submit">
+                <input 
+                    type="text" 
+                    placeholder="Go to the market..." 
+                    x-model="newTask" 
+                    class="w-full px-1"
+                />
+            </form>
+
+            <ul class="list-disc mt-3">
+                <template x-for="(task, index) in tasks" :key="index">
+                    <li>
+                        <input type="checkbox" x-model="task.completed" />
+                        <span x-text="task.body" :class="{ 'line-through': task.completed }"></span>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </body>    
+</html>

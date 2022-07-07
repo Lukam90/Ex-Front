@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tabs Visibility</title>
+
+    <script src="alpine.min.js"></script>
+
+    <style>
+    .tabs {
+        border: 1px dotted grey; 
+        padding: 1rem; 
+        margin-top: 1rem;
+    }
+
+    .active {
+        color: blue;
+    }
+    </style>
+</head>
+
+<body>
+    <div x-data="{ show: false }">
+        <h1 x-show="show">Hello World !</h1>
+
+        <button @click="show = ! show" x-text="show ? 'Hide' : 'Show'"></button>
+    </div>
+
+    <br />
+
+    <div x-data="{ currentTab: 'first' }">
+        <button @click="currentTab = 'first'" :class="{ 'active' : currentTab === 'first' }">First</button>
+        <button @click="currentTab = 'second'" :class="{ 'active' : currentTab === 'second' }">Second</button>
+        <button @click="currentTab = 'third'" :class="{ 'active' : currentTab === 'third' }">Third</button>
+
+        <div class="tabs">
+            <div x-show="currentTab === 'first'">
+                <p>First tab</p>
+            </div>
+    
+            <div x-show="currentTab === 'second'">
+                <p>Second tab</p>
+            </div>
+    
+            <div x-show="currentTab === 'third'">
+                <p>Third tab</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

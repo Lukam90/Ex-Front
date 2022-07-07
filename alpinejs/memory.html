@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Memory Game</title>
+
+        <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" />
+
+        <script src="alpine.min.js"></script>
+    </head>
+
+    <body>
+        <div x-data="game()" class="px-10 flex items-center justify-center min-h-screen">
+            <h1 class="fixed top-0 right-0 p-10 font-bold text-3xl" x-text="points">
+                <span x-text="points"></span>
+                <span class="text-xs">pts</span>
+            </h1>
+
+            <div class="flex-1 grid grid-cols-4 gap-10">
+                <template x-for="card in cards">
+                    <div 
+                        x-show="! card.cleared"
+                        :style="'background: ' + (card.flipped ? card.color : '#999')" 
+                        @click="flipCard(card)" 
+                        class="w-full h-32"
+                    ></div>
+                </template>
+            </div>
+        </div>
+
+        <div 
+            x-data="{ show: false, message: '' }"
+            x-show.transition.opacity="show"
+            x-text="message"
+            @flash.window="
+                message = $event.detail.message; 
+                show = true;
+                setTimeout(() => show = false, 1000);
+            "
+            class="fixed bottom-0 right-0 bg-green-500 text-white p-2 mb-4 mr-4 rounded"
+        >
+        </div>
+    </body>
+
+    <script src="memory.js"></script>
+</html>

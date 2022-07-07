@@ -1,0 +1,9 @@
+# Creation
+
+npx create-react-app react-tests
+
+# NPM
+
+npm install
+
+npm i -D --exact jest-watch-typeahead@0.6.5

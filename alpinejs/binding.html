@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Binding</title>
+
+    <script src="alpine.min.js"></script>
+</head>
+
+<body>
+    <div x-data="{ message: 'Hello World !' }">
+        <h1 x-text="message"></h1>
+
+        <button x-on:click="message = 'Changed'">Click Me</button>
+    </div>
+
+    <div x-data="{ message: 'Hello World !' }">
+        <h1 x-text="message.toUpperCase().substr(1)"></h1>
+    </div>
+
+    <div x-data="{ message: 'Hello World !' }">
+        <h1 x-text="message"></h1>
+
+        <input type="text" :value="message" />
+    </div>
+
+    <div x-data="{ message: 'Hello World !' }">
+        <h1 x-text="message"></h1>
+
+        <input type="text" x-model="message" />
+    </div>
+
+    <div x-data="{ first: 0, second: 0 }">
+        <h1>Calculator</h1>
+
+        <input type="text" x-model.number="first" /> +
+        <input type="text" x-model.number="second" /> =
+        <output type="text" x-text="first + second" />
+    </div>
+</body>
+</html>

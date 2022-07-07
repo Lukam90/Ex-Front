@@ -1,0 +1,21 @@
+th {
+    cursor: pointer;
+}
+
+table .sort-asc,
+table .sort-desc {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+th[data-order='asc']::after
+th[data-order='desc']::after {
+    margin-left: 5px;
+}
+
+th[data-order='asc']::after {
+    content: " \25b4";
+}
+
+th[data-order='desc']::after {
+    content: " \25be";
+}

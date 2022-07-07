@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        />
+
+        <link rel="stylesheet" href="./sortable.css" />
+
+        <title>Search Table System</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="sort-asc" data-column="id" data-order="asc" onclick="sort(event);">#</th>
+                        <th class="sort-asc" data-column="name" data-order="asc" onclick="sort(event);">Name</th>
+                        <th class="sort-asc" data-column="age" data-order="asc" onclick="sort(event);">Age</th>
+                        <th class="sort-asc" data-column="occupation" data-order="asc" onclick="sort(event);">Occupation</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td><b>Dom</b></td>
+                        <td>35</td>
+                        <td>Web Developer</td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td><b>Rebecca</b></td>
+                        <td>29</td>
+                        <td>Teacher</td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td><b>John</b></td>
+                        <td>30</td>
+                        <td>Civil Engineer</td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td><b>Andre</b></td>
+                        <td>20</td>
+                        <td>Dentist</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <script src="./utils.js"></script>
+        <script src="./sortable.js"></script>
+    </body>
+</html>
