@@ -1,1 +1,1 @@
-node can-construct.js
+node count-construct.js
