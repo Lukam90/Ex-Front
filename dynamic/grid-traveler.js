@@ -1,3 +1,6 @@
+// O(2^(n+m)) -> O(m * n) time
+// O(n + m) space
+
 const gridTraveler = (m, n, memo = {}) => {
     const key = m + "," + n;
 
