@@ -1,0 +1,20 @@
+1) Make it work
+
+- visualize the problem as a tree
+- implement the tree using recursion
+- test it
+
+Ex brute force
+
+O(n^m) time
+O(m) space
+
+2) Make it efficient
+
+- add a memo object
+- add a base case to return memo values
+
+Ex memoized
+
+O(m * n) time
+O(m) space
