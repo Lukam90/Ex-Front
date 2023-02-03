@@ -232,7 +232,17 @@ footer .social {
 
 /* Small tablet styles */
 @media screen and (min-width: 620px) {
-    
+    .welcome-text {
+        grid-column: 1/5;
+    }
+
+    .welcome-img {
+        grid-column: 5/9;
+    }
+
+    .welcome-img img {
+        width: 100%;
+    }
 }
 
 /* Large tablets & laptop styles */
