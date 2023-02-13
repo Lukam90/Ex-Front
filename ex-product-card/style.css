@@ -3,6 +3,7 @@
 
 :root {
     --clr-primary-400: hsl(158, 36%, 37%);
+    --clr-primary-500: hsl(158, 36%, 20%);
     --clr-secondary-200: hsl(30, 38%, 92%);
 
     --clr-neutral-900: hsl(212, 21%, 14%);
@@ -43,7 +44,50 @@ h1, h2, h3 {
 .flex-group {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     gap: 1rem;
+}
+
+.hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+}
+
+/* Button */
+
+button {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+
+    border: 0;
+    border-radius: 0.5rem;
+    
+    padding: 0.75em 1.5em;
+    font-size: 0.925rem;
+
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-bold);
+}
+
+button:is(:hover, :focus) {
+    background-color: var(--clr-primary-500);
+}
+
+button[data-icon="shopping-cart"]::before {
+    content: "";
+    background-image: url("images/icon-cart.svg");
+    width: 15px;
+    height: 16px;
 }
 
 /* Product styles */
@@ -52,14 +96,22 @@ h1, h2, h3 {
     --content-padding: 1.5rem;
     --content-spacing: 1rem;
 
+    display: grid;
     background-color: var(--clr-neutral-100);
     border-radius: 0.5rem;
     overflow: hidden;
+    max-width: 600px;
+}
+
+@media (min-width: 600px) {
+    .product {
+        --content-padding: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 .product__content {
     display: grid;
-    border: 3px solid red;
 
     gap: var(--content-spacing);
     padding: var(--content-padding);
@@ -77,3 +129,8 @@ h1, h2, h3 {
     color: var(--clr-neutral-900);
 }
 
+.product__price {
+    font-size: 2rem;
+    font-family: var(--ff-accent);
+    color: var(--clr-neutral-400);
+}
