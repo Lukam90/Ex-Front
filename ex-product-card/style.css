@@ -1,17 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');
 
+:root {
+    --clr-primary-400: hsl(158, 36%, 37%);
+    --clr-secondary-200: hsl(30, 38%, 92%);
+
+    --clr-neutral-900: hsl(212, 21%, 14%);
+    --clr-neutral-400: hsl(228, 12%, 48%);
+    --clr-neutral-100: hsl(0, 0%, 100%);
+
+    --ff-accent: "Fraunces", serif;
+    --ff-base: "Montserrat", sans-serif;
+
+    --fw-regular: 500;
+    --fw-bold: 700;
+}
+
+/* General styling */
+
+body {
+    font-family: var(--ff-base);
+    font-weight: var(--fw-regular);
+    color: var(--clr-neutral-400);
+    font-size: 0.875rem;
+    background-color: var(--clr-secondary-200);
+
+    display: grid;
+    place-content: center;
+    margin: 1rem;
+}
+
 h1 {
     font-size: 5rem;
 }
 
-/* Attribution */
-
-.attribution {
-    font-size: 11px; 
-    text-align: center; 
+h1, h2, h3 {
+    line-height: 1;
 }
 
-.attribution a { 
-    color: hsl(228, 45%, 44%); 
+/* Utilities */
+
+.flex-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
 }
+
+/* Product styles */
+
+.product {
+    --content-padding: 1.5rem;
+    --content-spacing: 1rem;
+
+    background-color: var(--clr-neutral-100);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.product__content {
+    display: grid;
+    border: 3px solid red;
+
+    gap: var(--content-spacing);
+    padding: var(--content-padding);
+}
+
+.product__category {
+    font-size: 0.8125rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.product__title {
+    font-size: 2rem;
+    font-family: var(--ff-accent);
+    color: var(--clr-neutral-900);
+}
+
