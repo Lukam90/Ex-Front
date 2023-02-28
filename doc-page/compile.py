@@ -29,20 +29,3 @@ with open("documentation.html", "w") as file:
     )
 
     file.close()
-
-"""
-    introductions
-what-you-should-already-know
-javascript-and-java
-hello-world
-variables
-declaring-variables
-variable-scope
-global-variables
-constants
-data-types
-if-else-statement
-while-statement
-function-declarations
-reference
-    """
