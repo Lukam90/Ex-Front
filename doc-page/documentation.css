@@ -72,9 +72,10 @@ footer {
 
 p {
     margin: 10px;
+    line-height: 1.5;
 }
 
-ol {
+ul {
     margin-left: 30px;
 }
 

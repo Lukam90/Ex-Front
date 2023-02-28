@@ -1,11 +1,9 @@
-{% include "data/sections.jinja" %}
-
 <nav>
     <header>JS Documentation</header>
 
     <ul>
-        {% for link in sections %}
-        <li><a href="#">{{ link }}</a></li>
+        {% for section in sections %}
+        <li><a href="#{{ section.link }}">{{ section.title }}</a></li>
         {% endfor %}
     </ul>
 </nav>
