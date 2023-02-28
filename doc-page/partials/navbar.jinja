@@ -1,0 +1,11 @@
+{% include "data/sections.jinja" %}
+
+<nav>
+    <header>JS Documentation</header>
+
+    <ul>
+        {% for link in sections %}
+        <li><a href="#">{{ link }}</a></li>
+        {% endfor %}
+    </ul>
+</nav>
