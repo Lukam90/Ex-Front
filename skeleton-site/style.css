@@ -1,0 +1,42 @@
+body {
+    background-color: rgb(36, 32, 32);
+    color: white;
+}
+
+.nav {
+    padding: 2rem 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-left: 1rem;
+}
+
+.right,
+.right img {
+    width: 100%;
+}
+
+.left {
+    padding-top: 5rem;
+}
+
+.table {
+    margin: 7rem 0;
+}
+
+.letter,
+.letter img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    .left {
+        text-align: center;
+        padding-bottom: 3rem;
+    }
+}

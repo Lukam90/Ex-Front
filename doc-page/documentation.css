@@ -5,9 +5,9 @@
     padding: 0;
 }
 
-html {
-    scroll-behavior: smooth;
-}
+/*
+   * Remove the margin in all browsers.
+   */
 
 /* Parts */
 
