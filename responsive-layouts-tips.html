@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Responsive Layouts Tips</title>
+
+    <style>
+    :root {
+        --clr-primary-200: #f3eed9;
+        --clr-primary-400: red;
+    
+        --clr-neutral-100: #fff;
+        --clr-neutral-900: #222c2a;
+    
+        --ff-primary: "Roboto", sans-serif;
+        --ff-accent: "Playfair Display", serif;
+    }
+    
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: var(--ff-primary);
+        font-weight: 400;
+        font-size: 1.3125rem;
+        line-height: 1.6;
+        background-image: url("abc");
+    }
+    
+    body,
+    h1,
+    h2,
+    h3,
+    p {
+        margin: 0;
+    }
+    
+    h1,
+    h2,
+    h3 {
+        color: var(--clr-primary-400);
+        font-family: var(--ff-accent);
+        font-weight: 900;
+        line-height: 1;
+    }
+    
+    h2,
+    h3,
+    p {
+        margin-bottom: 1em;
+    }
+
+    h1 {
+        font-size: clamp(2rem, 1rem + 10vw, 5rem);
+    }
+    
+    img {
+        display: block;
+        max-width: 100%;
+    }
+    
+    .text-center {
+        text-align: center;
+    }
+
+    header, section {
+        padding: 4rem 0;
+    }
+
+    @media (min-width: 40em) {
+        header, section {
+            padding: 7rem 0;
+        }
+    }
+
+    .container {
+        padding: 0 1em;
+        max-width: 60rem;
+        margin: 0 auto;
+        border: 2px solid red;
+    }
+
+    .bg-light {
+        background-color: var(--clr-primary-200);
+    }
+
+    .bg-primary {
+        color: var(--clr-neutral-100);
+        background-color: var(--clr-primary-400);
+    }
+
+    @media (min-width: 40em) {
+        .split {
+            display: flex;
+            gap: 2em;
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <section class="bg-light text-center">
+        <div class="container container--narrow">
+            <p>Lorem, ipsum dolor.</p>
+
+            <h2>Responsive layouts don’t have to be a struggle</h2>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2 class="text-center">Quality Designs</h2>
+
+            <div class="split">
+                <div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam inventore nemo, asperiores
+                        dolorem nisi voluptate omnis quam sit doloremque expedita architecto dicta, at consequatur.</p>
+                </div>
+
+                <div>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure aperiam inventore nemo, asperiores
+                        dolorem nisi voluptate omnis quam sit doloremque expedita architecto dicta, at consequatur.</p>
+                </div>
+
+                <div>
+                    <p>Eum quisquam deleniti facere fugit. Vero quidem sunt fuga fugit ea voluptatum placeat ullam
+                        eveniet,
+                        minima
+                        sed veritatis laboriosam. Quia cumque est cupiditate quod eum?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark">
+        <div class="container">
+            <div class="split">
+                <div>
+                    <img src="img/image-02.jpg" alt="foggy mountains with sun setting behind them">
+                </div>
+
+                <div>
+                    <h2>Made custom for you</h2>
+
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel ipsum dicta fuga vero aliquam!
+                        Officiis?</p>
+                </div>
+
+                <div>
+                    <img src="img/image-01.jpg" alt="man standing on mountain edge looking at sunset">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-primary">
+        <div class="container">
+            <div class="split">
+                <div>
+                    <img src="img/image-02.jpg" alt="foggy mountains with sun setting behind them">
+                </div>
+
+                <div>
+                    <h2>Created with care</h2>
+                
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis id hic at vel voluptatem
+                        reiciendis
+                        aut,
+                        esse aperiam? Quia aperiam nesciunt sint iste laboriosam quibusdam minus molestias blanditiis
+                        esse!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
