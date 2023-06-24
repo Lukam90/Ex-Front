@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <style>
+    .parent {
+        outline: 5px solid hotpink;
+        padding: 1rem;
+    }
+
+    .main-with-sidebar {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: start;
+        gap: 1em;
+    }
+
+    .main-with-sidebar > :first-child {
+        flex-basis: 500px;
+        flex-grow: 1;
+    }
+
+    .main-with-sidebar > :last-child {
+        flex-basis: 300px;
+        flex-grow: 1;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="main-with-sidebar parent">
+        <div class="children">
+            <h2>Lorem ipsum dolor sit.</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nemo non voluptates possimus aspernatur pariatur velit nostrum quibusdam ipsa optio.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolores sit animi porro temporibus commodi saepe debitis nisi doloremque aliquam.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nemo non voluptates possimus aspernatur pariatur velit nostrum quibusdam ipsa optio.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolores sit animi porro temporibus commodi saepe debitis nisi doloremque aliquam.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nemo non voluptates possimus aspernatur pariatur velit nostrum quibusdam ipsa optio.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolores sit animi porro temporibus commodi saepe debitis nisi doloremque aliquam.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nemo non voluptates possimus aspernatur pariatur velit nostrum quibusdam ipsa optio.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolores sit animi porro temporibus commodi saepe debitis nisi doloremque aliquam.</p>
+        </div>
+
+        <div class="sidebar">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nemo non voluptates possimus aspernatur pariatur velit nostrum quibusdam ipsa optio.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolores sit animi porro temporibus commodi saepe debitis nisi doloremque aliquam.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt nemo non voluptates possimus aspernatur pariatur velit nostrum quibusdam ipsa optio.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veniam dolores sit animi porro temporibus commodi saepe debitis nisi doloremque aliquam.</p>
+        </div>
+    </div>
+</body>
+</html>
