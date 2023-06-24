@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Document</title>
+
+    <style>
+    :root {
+        --step--2: clamp(0.78rem, calc(0.77rem + 0.03vw), 0.80rem);
+        --step--1: clamp(0.94rem, calc(0.92rem + 0.11vw), 1.00rem);
+        --step-0: clamp(1.13rem, calc(1.08rem + 0.22vw), 1.25rem);
+        --step-1: clamp(1.35rem, calc(1.28rem + 0.37vw), 1.56rem);
+        --step-2: clamp(1.62rem, calc(1.50rem + 0.58vw), 1.95rem);
+        --step-3: clamp(1.94rem, calc(1.77rem + 0.87vw), 2.44rem);
+        --step-4: clamp(2.33rem, calc(2.08rem + 1.25vw), 3.05rem);
+        --step-5: clamp(2.80rem, calc(2.45rem + 1.77vw), 3.82rem);
+    }
+    
+    .container {
+        width: min(90%, 1000px);
+        margin-inline: auto;
+    }
+    
+    .dark-background {
+        background: #333;
+        color: white;
+        padding: max(3vh, 1rem) 1.5rem;
+        margin-bottom: max(5vh, 2rem);
+    }
+    
+    body {
+        font-size: var(--step-0);
+    }
+    
+    h2 {
+        font-size: var(--step-3);
+        line-height: 1;
+    }
+    
+    h3 {
+        font-size: var(--step-2);
+    }
+    </style>
+</head>
+
+<body>
+    <header class="bg-gradient">
+        <h1 class="fs-800">Modern CSS FTW</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Lorem ipsum dolor sit amet.</h2>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur repellendus vero dolore, ipsam architecto necessitatibus doloremque quisquam beatae quam.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur repellendus vero dolore, ipsam architecto necessitatibus doloremque quisquam beatae quam.</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur repellendus vero dolore, ipsam architecto necessitatibus doloremque quisquam beatae quam.</p>
+
+            <div class="dark-background">
+                <h3>Lorem ipsum dolor sit amet.</h3>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur repellendus vero dolore, ipsam architecto necessitatibus doloremque quisquam beatae quam.</p>
+
+                <div class="nested-div">
+                    <p>I'm nested!</p>
+                </div>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur repellendus vero dolore, ipsam architecto necessitatibus doloremque quisquam beatae quam.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur repellendus vero dolore, ipsam architecto necessitatibus doloremque quisquam beatae quam.</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus aspernatur repellendus vero dolore, ipsam architecto necessitatibus doloremque quisquam beatae quam.</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
