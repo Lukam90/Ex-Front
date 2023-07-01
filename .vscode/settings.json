@@ -1,0 +1,10 @@
+{
+    "[markdown]": {
+        "editor.quickSuggestions": {
+            "other": true,
+            "comments": false,
+            "strings": false
+        }
+    },
+    "zowe.settings.version": 2
+}
