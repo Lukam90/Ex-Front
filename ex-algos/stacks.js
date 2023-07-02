@@ -42,25 +42,3 @@ stack.print()
 
 console.log(stack.pop())
 console.log(stack.peek())
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
