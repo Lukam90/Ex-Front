@@ -1,3 +1,7 @@
+export const metadata = {
+    title: "About Traversy Media"
+}
+
 export default function AboutPage() {
     return (
         <div>
