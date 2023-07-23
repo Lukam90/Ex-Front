@@ -16,6 +16,8 @@ ng s -o
 
 **Packages**
 
+npm i -g json-server
+
 npm i ng-angular-popup --force
 
 npm i ng-confirm-box --force
@@ -27,3 +29,7 @@ ng g c create-registration
 ng g c registration-list
 
 ng g c user-detail
+
+**JSON Server**
+
+json-server --watch db.json
