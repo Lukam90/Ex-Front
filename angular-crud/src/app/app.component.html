@@ -3,7 +3,7 @@
 
   <span class="example-spacer"></span>
 
-  <button mat-raised-button color="accent">
+  <button routerLink="/list" mat-raised-button color="accent">
     View Enquiries
   </button>
 </mat-toolbar>
@@ -11,3 +11,6 @@
 <div class="container mt-4">
   <router-outlet></router-outlet>
 </div>
+
+<lib-ng-toast></lib-ng-toast>
+<ng-confirm></ng-confirm>
