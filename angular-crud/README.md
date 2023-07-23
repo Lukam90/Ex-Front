@@ -12,6 +12,8 @@ ng new angular-crud
 
 ng serve
 
+ng s -o
+
 **Packages**
 
 npm i ng-angular-popup --force

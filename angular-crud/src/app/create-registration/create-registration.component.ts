@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./create-registration.component.scss']
 })
 export class CreateRegistrationComponent {
-
+  public packages: string[] = ["Monthly", "Quarterly", "Yearly"];
+  public genders: string[] = ["Male", "Female"];
+  public importantList: string[] = ["Toxic fat reduction", "Energy and endurance", "building lean muscle", "healthier digestive system", "super craving body", "fitness"];
 }
