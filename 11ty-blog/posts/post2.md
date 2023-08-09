@@ -1,0 +1,5 @@
+---
+title: My second post
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sit amet tristique justo. In vel turpis a justo finibus ullamcorper. Morbi scelerisque nisi sit amet neque tincidunt euismod. Vestibulum sit amet lorem non nisi feugiat lobortis ac tristique quam. Aliquam dignissim finibus rutrum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Quisque condimentum placerat lorem nec interdum. Quisque gravida, nibh vitae mollis dictum, nisl sapien rutrum risus, a elementum nisl mauris vel quam. Fusce hendrerit mollis dui, nec maximus purus porttitor quis. Phasellus sed ultricies leo. Quisque suscipit augue ac libero tempor, nec tristique diam molestie. Integer scelerisque eros est, vitae tempus dolor sodales vitae. Integer commodo pharetra ligula, non porta purus pulvinar vitae. Aenean iaculis nulla porttitor felis dignissim, et egestas eros congue.
