@@ -4,12 +4,12 @@
   "description": "[SASS Tutorial (Build Your Own CSS Library)](https://www.youtube.com/playlist?list=PL4cUxeGkcC9jxJX7vojNVK-o8ubDZEcNb) de *Net Ninja*",
   "main": "index.js",
   "scripts": {
-    "scss": "node-sass --watch scss -o css"
+    "sass": "sass -w scss:css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^9.0.0"
+    "sass": "^1.65.1"
   }
 }

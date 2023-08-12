@@ -10,11 +10,11 @@ npm init -y
 
 **Packages**
 
-npm install node-sass
+npm install sass
 
 **Compile**
 
-npm run scss
+npm run sass
 
 
 
