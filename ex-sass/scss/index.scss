@@ -1,6 +1,7 @@
 
 // Variables & functions
 @import '_variables';
+@import '_functions';
 
 // Base & layout
 @import '_base';
@@ -13,6 +14,7 @@
 @import 'components/_button';
 
 // Utilities (margin, padding, opacity)
+@import '_utilities';
 
 h1 {
     color: $primary;
