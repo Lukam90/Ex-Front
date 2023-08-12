@@ -15,20 +15,3 @@ npm install sass
 **Compile**
 
 npm run sass
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
