@@ -160,6 +160,8 @@ button:focus-visible {
 }
 
 .result-score {
+    display: grid;
+    place-content: center;
     width: 12rem;
     margin-inline: auto;
     background: var(--gradient-to-transparent);
