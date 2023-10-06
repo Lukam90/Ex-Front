@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tips</title>
+
+    <style>
+    .dropdown {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    button:focus-within ~ .dropdown {
+        opacity: 1;
+        visibility: visible;
+    }
+    </style>
+</head>
+
+<body>
+    <button>My button</button>
+
+    <div class="dropdown">Action</div>
+    <div class="dropdown">Another action</div>
+</body>
+</html>

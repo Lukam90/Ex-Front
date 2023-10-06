@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tips</title>
+
+    <style>
+    :root {
+        --r: 255;
+        --g: 0;
+        --b: 0;
+
+        --text-color: rgb(var(--r), var(--g), var(--b));
+    }
+
+    p {
+        --text-color: green;
+
+        color: var(--text-color);
+    }
+
+    h1 {
+        color: var(--text-color);
+    }
+    </style>
+</head>
+
+<body>
+    <p>My colored text</p>
+</body>
+</html>

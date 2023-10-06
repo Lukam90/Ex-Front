@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tips</title>
+
+    <style>
+    .drop {
+        animation: dropIn 1s ease forwards;
+        animation-delay: calc(var(--order) * 100ms);
+    }
+
+    @keyframes dropIn {
+        from { transform: translateY(-500px); }
+        to { transform: translateY(0); }
+    }
+    </style>
+</head>
+
+<body>
+    <p class="drop" style="--order: 1">1</p>
+    <p class="drop" style="--order: 2">2</p>
+    <p class="drop" style="--order: 3">3</p>
+</body>
+</html>
