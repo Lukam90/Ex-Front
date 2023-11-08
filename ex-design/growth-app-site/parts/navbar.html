@@ -7,25 +7,19 @@
         </div>
 
         <div class="main-menu">
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
+            {% include "parts/navlinks.html" %}
+        </div>
 
-                <li>
-                    <a href="index.html">About Us</a>
-                </li>
+        <!-- Hamburger button -->
 
-                <li>
-                    <a href="index.html">Blog</a>
-                </li>
+        <button id="hamburger-button">
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+            <div class="hamburger-line"></div>
+        </button>
 
-                <li>
-                    <a class="btn" href="index.html">
-                        <i class="fas fa-user"></i> Log In
-                    </a>
-                </li>
-            </ul>
+        <div class="mobile-menu">
+            {% include "parts/navlinks.html" %}
         </div>
     </div>
 </nav>
