@@ -33,37 +33,37 @@ img {
 
 /* Navbar */
 
-.navbar {
+nav {
     background: #fff;
     padding: 20px;
 }
 
-.navbar .container {
+nav .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.navbar .main-menu ul {
+nav .main-menu ul {
     display: flex;
 }
 
-.navbar ul li a {
+nav ul li a {
     padding: 10px 20px;
     display: block;
     font-weight: 600;
     transition: 0.5s;
 }
 
-.navbar ul li a:hover {
+nav ul li a:hover {
     color: var(--primary-color);
 }
 
-.navbar ul li a i {
+nav ul li a i {
     margin-right: 10px;
 }
 
-.navbar ul li:last-child a {
+nav ul li:last-child a {
     margin-left: 10px;
 }
 
@@ -447,11 +447,11 @@ img {
 }
 
 @media (max-width: 670px) {
-    .navbar .main-menu {
+    nav .main-menu {
         display: none;
     }
 
-    .navbar #hamburger-button {
+    nav #hamburger-button {
         display: block;
     }
 
