@@ -1,0 +1,192 @@
+/* 1 */
+
+#garden {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+    grid-column-start: 3;
+}
+
+/* 2 */
+
+#poison {
+    grid-column-start: 5;
+}
+
+/* 3 */
+
+#water {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/* 4 */
+
+#water {
+    grid-column-start: 5;
+    grid-column-end: 2;
+}
+
+/* 5 */
+
+#water {
+    grid-column-start: 1;
+    grid-column-end: -2;
+}
+
+/* 6 */
+
+#poison {
+    grid-column-start: -3;
+}
+
+/* 7 */
+
+#water {
+    grid-column-start: 2;
+    grid-column-end: span 2;
+}
+
+/* 8 */
+
+#water {
+    grid-column-start: 1;
+    grid-column-end: span 5;
+}
+
+/* 9 */
+
+#water {
+    grid-column-start: span 3;
+    grid-column-end: 6;
+}
+
+/* 10 */
+
+#water {
+    grid-column: 4/6;
+}
+
+/* 11 */
+
+#water {
+    grid-column: span 3/5
+}
+
+/* 12 */
+
+#water {
+    grid-row-start: 3;
+}
+
+/* 13 */
+
+#water {
+    grid-row: 3/6;
+}
+
+/* 14 */
+
+#poison {
+    grid-column: 2;
+    grid-row: 5;
+}
+
+/* 15 */
+
+#water {
+    grid-column: 2/6;
+    grid-row: 1/6;
+}
+
+/* 16 */
+
+#water {
+    grid-area: 1/2/4/6;
+}
+
+/* 17 */
+
+#water-1 {
+    grid-area: 1/4/6/5;
+}
+
+#water-2 {
+    grid-area: 2/3/5/6;
+}
+
+/* 18 */
+
+.water {
+    order: 0;
+}
+
+#poison {
+    order: 6;
+}
+
+/* 19 */
+
+.water {
+    order: 0;
+}
+
+.poison {
+    order: -1;
+}
+
+/* 20 */
+
+#garden {
+    display: grid;
+    grid-template-columns: 50% 30% 20%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+#water {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+/* 21 */
+
+#garden {
+    display: grid;
+    grid-template-columns: repeat(8, 12.5%);
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+/* 22 */
+
+#garden {
+    display: grid;
+    grid-template-columns: 100px 3em 40%;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+/* 23 */
+
+#garden {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+/* 24 */
+
+#garden {
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-rows: 20% 20% 20% 20% 20%;
+}
+
+/* 25 */
+
+#garden {
+    display: grid;
+    grid-template-columns: 75px 3fr 2fr;
+    grid-template-rows: 100%;
+}

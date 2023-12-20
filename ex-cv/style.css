@@ -177,3 +177,48 @@ h4 {
     font-weight: 600;
     color: #231fbf;
 }
+
+.edu-group-box b span {
+    position: relative;
+    top: -2px;
+    font-size: 0.8em;
+    color: #665;
+}
+
+.hobbies
+{
+    padding: 0 50px 50px;
+}
+
+.hobbies ul
+{
+    display: flex;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.hobbies ul li
+{
+    list-style: none;
+    color: #333;
+    width: calc(100% / 6);
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: #f3f3f3;
+    text-align: center;
+    cursor: pointer;
+}
+
+.hobbies ul li:hover
+{
+    background: #231fbf;
+    color: #fff;
+}
+
+.hobbies ul li i
+{
+    font-size: 2em;
+}
